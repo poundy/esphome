@@ -27,7 +27,7 @@ void ILI9341Display::setup_pins_() {
 }
 
 void ILI9341Display::dump_config() {
-  LOG_DISPLAY("", "ili9341", this);
+  LOG_DISPLAY("", "ili9341-poundy", this);
   ESP_LOGCONFIG(TAG, "  Width: %d, Height: %d,  Rotation: %d", this->width_, this->height_, this->rotation_);
   LOG_PIN("  Reset Pin: ", this->reset_pin_);
   LOG_PIN("  DC Pin: ", this->dc_pin_);
