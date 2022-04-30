@@ -12,6 +12,7 @@ namespace ili9341 {
 enum ILI9341Model {
   M5STACK = 0,
   TFT_24,
+  TFT_320x480,
 };
 
 class ILI9341Display : public PollingComponent,
@@ -92,5 +93,13 @@ class ILI9341TFT24 : public ILI9341Display {
  public:
   void initialize() override;
 };
+
+//--- INITCMD_TFT320_480
+//-----------   ILI9341_320_480_TFT display --------------
+class ILI9341TFT320x480 : public ILI9341Display {
+ public:
+  void initialize() override;
+};
+  
 }  // namespace ili9341
 }  // namespace esphome

@@ -272,5 +272,13 @@ void ILI9341TFT24::initialize() {
   this->fill_internal_(Color::BLACK);
 }
 
+  //   320x480_TFT display
+void ILI9341TFT320x480::initialize() {
+  this->init_lcd_(INITCMD_TFT);
+  this->width_ = 320;
+  this->height_ = 480;
+  this->fill_internal_(Color::BLACK);
+}
+
 }  // namespace ili9341
 }  // namespace esphome
